@@ -10,17 +10,24 @@
 </head>
 
 <body>
-    <main class="flex items-center justify-center h-screen w-full bg-Light-Grayish-Blue">
-        <section class="flex w-1/2 bg-white rounded-lg">
-            <img src="/images/drawers.jpg" class="object-cover w-80 h-auto rounded-l-lg" alt="Drawers">
+    <main class="flex items-center justify-center h-screen w-full md:px-24 bg-Light-Grayish-Blue">
+        <section class="flex flex-col m-8 bg-white rounded-lg md:w-3/5 md:flex-row md:m-0">
+            <img src="/images/drawers.jpg"
+                class="object-cover w-80 h-auto rounded-t-lg md:rounded-tr-none md:rounded-l-lg" alt="Drawers">
 
-            <div class="flex flex-col px-12 py-8 gap-6">
+            <div class="flex flex-col px-7 pt-8 pb-6 gap-6 md:pb-8 md:px-12">
                 <div class="flex flex-col gap-4">
-                    <h3 class="text-xl font-semibold leading-7 text-Very-Dark-Grayish-Blue">Shift the overall look and
+                    <h3
+                        class="text-base font-bold text-Very-Dark-Grayish-Blue md:text-xl md:font-semibold md:leading-7">
+                        Shift the
+                        overall look
+                        and
                         feel by adding these
                         wonderful
                         touches to furniture in your home</h3>
-                    <p class="text-xs font-medium leading-5 text-Desaturated-Dark-Blue">Ever been in a room and felt
+                    <p class="text-xs font-medium leading-5 pr-5 text-Desaturated-Dark-Blue md:pr-0">Ever been in a room
+                        and
+                        felt
                         like something
                         was missing? Perhaps
                         it felt slightly bare and uninviting. I’ve got some simple tips
@@ -33,11 +40,24 @@
                         <h6 class="text-xs font-bold text-Very-Dark-Grayish-Blue tracking-wide">Michelle Appleton</h6>
                         <p class="text-xs text-Desaturated-Dark-Blue tracking-wide">28 Jun 2020</p>
                     </div>
-                    <div class="ml-auto bg-Light-Grayish-Blue p-2 rounded-full">
+                    <div
+                        class="relative flex flex-col items-center group ml-auto bg-Light-Grayish-Blue p-2 rounded-full cursor-pointer">
                         <img src="/images/icon-share.svg" alt="Share">
+                        <div
+                            class="opacity-0 flex gap-4 bg-Very-Dark-Grayish-Blue text-white text-center text-xs rounded-lg py-2 absolute z-10 group-hover:opacity-100 bottom-full px-3 pointer-events-none">
+                            <p>SHARE</p>
+                            <img src="/images/icon-facebook.svg" alt="Facebook">
+                            <img src="/images/icon-twitter.svg" alt="Twitter">
+                            <img src="/images/icon-pinterest.svg" alt="Pinterest">
+                            <svg class="absolute text-Very-Dark-Grayish-Blue h-2 w-full left-0 top-full" x="0px" y="0px"
+                                viewBox="0 0 255 255" xml:space="preserve">
+                                <polygon class="fill-current" points="0,0 127.5,127.5 255,0" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 </body>
