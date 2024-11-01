@@ -9,28 +9,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="w-1/5">
+<body class="bg-custom-light-grayish-blue h-screen content-center p-6">
+  <div class="flex flex-col mx-auto font-manrope drop-shadow-lg md:flex-row md:w-[42rem]">
     <div>
-      <img src="/drawers.jpg" alt="image">
+      <img src="/drawers.jpg" alt="image" class="h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg">
     </div>
     <div>
-      <div>
-        <h3>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
-        <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
-          got
-          some simple tips to help you make any room feel complete.</p>
-      </div>
-      <div class="flex items-center">
-        <img src="/avatar-michelle.jpg" class="h-10 rounded-full" alt="avatar">
-        <div>
-          <p>Michelle Appleton</p>
-          <p>28 Jun 2020</p>
+
+      <div
+        class="flex flex-col bg-white h-full justify-between p-8 gap-4 rounded-b-lg md:rounded-b-none md:rounded-r-lg">
+        <div class="flex flex-col gap-3">
+          <h3 class="text-custom-very-dark-grayish-blue font-bold leading-6">Shift the overall look and feel by
+            adding
+            these
+            wonderful touches to furniture in your home</h3>
+          <p class="text-custom-desaturated-dark-blue font-medium text-xs leading-[1.20rem] tracking-wide mr-4">Ever
+            been in a room
+            and felt
+            like
+            something
+            was
+            missing?
+            Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel
+            complete.</p>
         </div>
-        <div>
-          <img src="/icon-share.svg" alt="share">
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img src="/avatar-michelle.jpg" class="h-10 rounded-full" alt="avatar">
+            <div class="text-xs">
+              <p class="text-custom-very-dark-grayish-blue font-bold">Michelle Appleton</p>
+              <p class="text-custom-desaturated-dark-blue">28 Jun 2020</p>
+            </div>
+          </div>
+          <div class="bg-custom-light-grayish-blue p-2 rounded-full">
+            <img src="/icon-share.svg" alt="share">
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </body>
