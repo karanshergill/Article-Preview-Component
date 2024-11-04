@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Mentor | Article Preview Component</title>
   <link rel="stylesheet" href="style.css">
+  <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
 <body class="bg-custom-light-grayish-blue h-screen content-center p-6">
@@ -14,8 +15,8 @@
     <div>
       <img src="/drawers.jpg" alt="image" class="h-full rounded-t-lg md:rounded-t-none md:rounded-l-lg">
     </div>
-    <div>
 
+    <div>
       <div
         class="flex flex-col bg-white h-full justify-between p-8 gap-4 rounded-b-lg md:rounded-b-none md:rounded-r-lg">
         <div class="flex flex-col gap-3">
@@ -35,9 +36,32 @@
               <p class="text-custom-desaturated-dark-blue">28 Jun 2020</p>
             </div>
           </div>
-          <div class="bg-custom-light-grayish-blue p-2 rounded-full">
-            <img src="/icon-share.svg" alt="share">
+
+          <div class="relative group">
+            <button class="bg-custom-light-grayish-blue p-2 rounded-full focus:outline-none">
+              <img src="/icon-share.svg" alt="share">
+            </button>
+
+            <div class="absolute left-1/2 transform -translate-x-1/2 -top-12 mb-2 group flex flex-col items-center">
+              <div
+                class="bg-custom-very-dark-grayish-blue text-white text-xs px-3 py-2 rounded-lg shadow-md flex items-center space-x-3">
+                <span class="font-manrope text-sm">SHARE</span>
+                <div class="flex space-x-3">
+                  <div class="p-1">
+                    <img src="/icon-facebook.svg" alt="">
+                  </div>
+                  <div class="p-1">
+                    <img src="/icon-facebook.svg" alt="">
+                  </div>
+                  <div class="p-1">
+                    <img src="/icon-facebook.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="w-3 h-3 bg-custom-very-dark-grayish-blue rotate-45 -mt-2"></div>
+            </div>
           </div>
+
         </div>
       </div>
 
